@@ -1,14 +1,14 @@
 # Webpack Starter
 
-This is my initialization to create projects by using Webpack.
+Este es el proyecto inicial para crear aplicaciones utilizando webpack.
 
-### Notes:
-
-Remember to remake the node modules by using: 
+### Notas:
+Recuerden reconstruir los módulos de Node
 ```
 npm install
-``` 
-And remember to create the dist folder with:
+```
+
+Y para construir el build, recueren:
 ```
 npm run build
 ```
