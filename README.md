@@ -3,12 +3,12 @@
 Este es el proyecto inicial para crear aplicaciones utilizando webpack.
 
 ### Notas:
-Recuerden reconstruir los módulos de Node
+Recuerda reconstruir los módulos de Node con:
 ```
 npm install
 ```
 
-Y para construir el build, recueren:
+Y para construir el build, recuerda utilizar:
 ```
 npm run build
 ```
