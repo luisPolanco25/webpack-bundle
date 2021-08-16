@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luisPolanco25/webpack-starter.git"
+    "url": "git+https://github.com/luisPolanco25/webpack-bundle.git"
   },
   "keywords": [],
   "author": "Luis Polanco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luisPolanco25/webpack-starter/issues"
+    "url": "https://github.com/luisPolanco25/webpack-bundle/issues"
   },
-  "homepage": "https://github.com/luisPolanco25/webpack-starter#readme",
+  "homepage": "https://github.com/luisPolanco25/webpack-bundle#readme",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
