@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtract    = require('mini-css-extract-plugin');
-const CopyPlugin        = require('copy-webpack-plugin');
 
 const CssMinimizer      = require('css-minimizer-webpack-plugin');
 const Terser            = require('terser-webpack-plugin');
@@ -35,7 +34,15 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
-                loader: 'file-loader'
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            esModule: false,
+                            name: 'assets/[name].[ext]',
+                        }
+                    }
+                ]
             },
             {
                 test: /\.svg$/,
@@ -71,15 +78,6 @@ module.exports = {
         new MiniCssExtract({
             filename: '[name].[fullhash].css',
             ignoreOrder: false
-        }),
-
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: 'src/assets/',
-                    to: 'assets/'
-                }
-            ]
         })
     ]
 
